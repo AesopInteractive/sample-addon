@@ -114,7 +114,7 @@ class myCustomComponent {
 		);
 
 
-		return array_merge( $custom, $shortcodes );
+		return array_merge( $shortcodes, $custom );
 
 	}
 
