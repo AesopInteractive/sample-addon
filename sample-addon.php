@@ -56,12 +56,10 @@ class myCustomComponent {
 	*/
 	function icon(){
 
-		$css = '
-				#aesop-generator-wrap li.test a:before {
-				content: "\f128";
-				}
-		';
-		wp_add_inline_style('ai-core-styles', $css);
+		$icon = '\f164'; //css code for dashicon
+		$slug = 'test'; // name of component
+
+		wp_add_inline_style('ai-core-styles', '#aesop-generator-wrap li.'.$slug.' a:before {content: "'.$icon.'";}');
 	}
 
 	/**
