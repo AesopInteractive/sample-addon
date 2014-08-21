@@ -26,6 +26,7 @@ class myCustomComponent {
 	*
 	*	Components are shortcodes
 	*
+	*
 	*/
 	function shortcode($atts, $content = null) {
 
@@ -53,6 +54,8 @@ class myCustomComponent {
 	*	to the url here to get the code you need
 	*  	http://melchoyce.github.io/dashicons/
 	*
+	*	Note: expect this to possibly change in the future
+	*
 	*/
 	function icon(){
 
@@ -79,6 +82,7 @@ class myCustomComponent {
 						'values' 	=> array( ),
 						'default' 	=> '',
 						'desc' 		=> 'Caption Position',
+						'prefix'	=> 'px', // optional prefix that you can pass to aid in correct value inputs by user
 						'tip'		=> 'Here is a tip for this option.'
 					),
 					'beta' 			=> array(
