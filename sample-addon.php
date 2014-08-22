@@ -5,6 +5,11 @@
 *
 */
 
+// check if aesop story engine is active
+if ( class_exists('Aesop_Core') ) {
+	new myCustomComponent();
+}
+
 class myCustomComponent {
 
 	function __construct(){
@@ -137,7 +142,5 @@ class myCustomComponent {
 	}
 
 }
-
-new myCustomComponent();
 
 
