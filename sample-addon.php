@@ -107,10 +107,14 @@ class myCustomComponent {
 					'delta' 			=> array(
 						'type'		=> 'text', // a select dropdown 
 						'values' 	=> array(
-							'1',
-							'2',
-							'3',
-							'4'
+							array(
+								'value' => 'optionvalue',
+								'name'	=> 'Option Name'
+							),
+							array(
+								'value' => 'anotheroption',
+								'name'	=> 'Option Name'
+							)
 						),
 						'default' 	=> '',
 						'desc' 		=> 'A dropdown option.',
