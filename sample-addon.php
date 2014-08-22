@@ -105,7 +105,7 @@ class myCustomComponent {
 						'tip'		=> 'Here is a tip for this option.'
 					),
 					'delta' 			=> array(
-						'type'		=> 'text', // a select dropdown 
+						'type'		=> 'select', // a select dropdown 
 						'values' 	=> array(
 							array(
 								'value' => 'optionvalue',
