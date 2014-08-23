@@ -44,10 +44,15 @@ class myCustomComponent {
 
 		$atts 	= shortcode_atts($defaults, $atts);
 
+		// account for multiple instances of this component
+		static $instance = 0;
+		$instance++;
+		$unique = sprintf('%s-%s',get_the_ID(), $instance);
+
 		// example of getting an option value
 		$beta  	= $atts['beta'];
 
-		$out = sprintf('<p>%s</p>', $beta);
+		$out = sprintf('<p id="%s">%s</p>', $unique, $beta);
 
 		return $out;
 	}
