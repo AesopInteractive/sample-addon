@@ -4,9 +4,20 @@ class myCustomComponentFront {
 
 	function __construct(){
 
-		add_filter('lasso_components', 			array($this,'components_available'), 11, 1);
 		add_action('lasso_toolbar_components', 	array($this,'components_list'));
+		add_filter('lasso_components', 			array($this,'components_available'), 11, 1);
 
+	}
+
+	/**
+	*
+	*	Add our component to the drop-up list of components
+	*
+	*	Note: data-type must match the component slug listed above
+	*/
+	function components_list(){
+
+		?><li data-type="sample_addon" title="Sample Title"></li><?php
 	}
 
 	/**
@@ -28,16 +39,6 @@ class myCustomComponentFront {
 
 	}
 
-	/**
-	*
-	*	Add our component to the drop-up list of components
-	*
-	*	Note: data-type must match the component slug listed above
-	*/
-	function components_list(){
-
-		?><li data-type="sample_addon" title="Sample Title"></li><?php
-	}
 
 	/**
 	*

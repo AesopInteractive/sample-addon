@@ -14,6 +14,7 @@ class myCustomComponent {
 		define('MY_URL', plugins_url( '', __FILE__ ));
 
 		require_once(MY_DIR.'class.shortcode.php');
+		require_once(MY_DIR.'class.settings.php');
 
 		if ( class_exists('Aesop_Core') )
 			require_once(MY_DIR.'class.backend.php');
