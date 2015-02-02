@@ -17,7 +17,7 @@ class myCustomComponentFront {
 	*/
 	function components_list(){
 
-		?><li data-type="sample_addon" title="Sample Title"></li><?php
+		?><li data-type="test" title="Sample Title"></li><?php
 	}
 
 	/**
@@ -29,7 +29,7 @@ class myCustomComponentFront {
 	function components_available($existing){
 
 		$components = array(
-			'sample_addon' => array(
+			'test' => array(
 				'name' => 'Image',
 				'content' => self::my_callback()
 			)
@@ -51,7 +51,7 @@ class myCustomComponentFront {
 		ob_start();
 
 			?>
-			<div class="cgcm-image-component aesop-component" data-component-type="sample_addon" data-src="http://placekitten.com/800/540" >
+			<div class="cgcm-image-component aesop-component" data-component-type="test" >
 				<img src="http://placekitten.com/800/540">
 			</div>
 			<?php

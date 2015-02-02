@@ -40,7 +40,7 @@ class myCustomComponentSC {
 
 		// if lasso is active we need to map the sc atts as data-attributes
 		if ( class_exists('Lasso') && lasso_user_can() ) {
-			$options = function_exists('aesop_data_component_atts') ? aesop_data_component_atts('aesop_test', $unique, $atts) : false;
+			$options = function_exists('aesop_component_data_atts') ? aesop_component_data_atts('aesop_test', $unique, $atts) : false;
 		} else {
 			$options = false;
 		}
