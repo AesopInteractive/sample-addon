@@ -70,21 +70,21 @@ class myCustomComponentSettings {
 					),
 					'foxtrot' 				=> array(
 						'type'			=> 'select',
-						'values' 		=> aesop_option_counter(10), // pass the max number of items to produce
+						'values' 		=> function_exists('aesop_option_counter') ? aesop_option_counter(10) : false, // pass the max number of items to produce
 						'default' 		=> '2',
 						'desc' 			=> 'Counter Option Type',
 						'tip'			=> 'Tip here.'
 					),
 					'golf' 			=> array(
 						'type'			=> 'select',
-						'values' 		=> aesop_option_get_categories('post'), // pass the type - default is post
+						'values' 		=> function_exists('aesop_option_get_categories') ? aesop_option_get_categories('post') : false, // pass the type - default is post
 						'default' 		=> '',
 						'desc' 			=> 'Categories Option Type',
 						'tip'			=> 'Tip here.'
 					),
 					'hotel' 				=> array(
 						'type'			=> 'select',
-						'values' 		=> aesop_option_get_posts('post'), // pass the type - default is post
+						'values' 		=> function_exists('aesop_option_get_posts') ? aesop_option_get_posts('post') : false, // pass the type - default is post
 						'default' 		=> '',
 						'desc' 			=> 'Post Option Type',
 						'tip'			=> 'Tip here.'

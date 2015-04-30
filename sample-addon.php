@@ -20,7 +20,7 @@ class myCustomComponent {
 			require_once(MY_DIR.'class.backend.php');
 
 		// compatibility aesop front end editor
-		if ( class_exists('Lasso') ) {
+		if ( function_exists( 'lasso_editor_components' ) ) {
 
 			//define('LASSO_CUSTOM', true);
 			require_once(MY_DIR.'class.front-end.php');
