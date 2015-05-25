@@ -39,8 +39,8 @@ class myCustomComponentSC {
 		$beta  	= $atts['beta'];
 
 		// if lasso is active we need to map the sc atts as data-attributes
-		if ( function_exists( 'lasso_editor_components' ) && lasso_user_can() ) {
-			$options = function_exists('aesop_component_data_atts') ? aesop_component_data_atts('aesop_test', $unique, $atts) : false;
+		if ( class_exists( 'lasso_autoloader' ) && ( function_exists('lasso_user_can') && lasso_user_can() ) ) {
+			$options = function_exists('aesop_component_data_atts') ? aesop_component_data_atts('test', $unique, $atts) : false;
 		} else {
 			$options = false;
 		}
