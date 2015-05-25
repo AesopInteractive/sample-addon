@@ -20,7 +20,7 @@ class myCustomComponent {
 			require_once(MY_DIR.'class.backend.php');
 
 		// compatibility aesop front end editor
-		if ( function_exists( 'lasso_editor_components' ) ) {
+		if ( class_exists( 'lasso_autoloader' ) ) {
 
 			//define('LASSO_CUSTOM', true);
 			require_once(MY_DIR.'class.front-end.php');
@@ -29,7 +29,6 @@ class myCustomComponent {
 		// optional enqueue js or css
 		add_action('wp_enqueue_scripts', 		array($this,'scripts'));
 	}
-
 
 	/**
 	*
