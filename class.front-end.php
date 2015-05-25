@@ -42,10 +42,11 @@ class myCustomComponentFront {
 
 	/**
 	*
-	*	Create a docs image component
+	*	Create a docs image component ( HTML Based )
 	*	Note: we use aesop-component class so that the user can has controls
 	*
 	*/
+	/*
 	function my_callback(){
 
 		ob_start();
@@ -57,6 +58,16 @@ class myCustomComponentFront {
 			<?php
 
 		return ob_get_clean();
+	}
+	*/
+
+	/**
+	*
+	*	Create a docs image component ( Dynamic (shortcode) Based )
+	*
+	*/
+	function my_callback(){
+		return do_shortcode( '[aesop_test]' ); // note how this matches L:32 above. 'aesop' is automatically prefixed
 	}
 
 }
