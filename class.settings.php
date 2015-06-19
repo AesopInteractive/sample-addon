@@ -31,7 +31,7 @@ class myCustomComponentSettings {
 						'type'			=> 'text_small', // a small text field
 						'default' 		=> '',
 						'desc' 			=> 'Small Text Field',
-						'prefix'		=> 'px', // optional prefix that you can pass to aid in correct value inputs by user
+						'suffix'		=> 'sx', // optional suffix that you can pass to aid in correct value inputs by user
 						'tip'			=> 'Here is a tip for this option.'
 					),
 					'beta' 				=> array(
